@@ -6,8 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="mask">
+        <img src="https://github.githubassets.com/assets/mona-loading-dark-7701a7b97370.gif" alt="">
+        <p>Подождите пожалуйста</p>
+    </div>
     <div class="content">
         <div class="block">
             <header class="logo">
@@ -21,17 +27,130 @@
                 <li>
                     <div class="search-box">
                         <input type="search" placeholder="Поиск">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>                    
                     </div>
                 </li>
                 <li><a href="#">RU</a></li>
                 <li><i class="fa-solid fa-heart"></i></li>
-                <li><i class="fa-solid fa-user"></i></li>
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
             </ul>
         </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://margo.od.ua/image/catalog/img_2499.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://margo.od.ua/image/catalog/img_2500.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="info-blocks">
+            <div class="info-item">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Доставка по Украине</h3>
+                <p>Отправим ваш заказ с любой удобной транспортной компанией</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-wallet"></i>
+                <h3>Способы оплаты</h3>
+                <p>Работаем с 100% предоплатой</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-question"></i>
+                <h3>Как заказать?</h3>
+                <p>Сделать заказ через сайт с помощью формы</p>
+            </div>
+        </div>
+
+        <div class="categories">
+            <h2>Категории</h2>
+            <div class="cards">
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/gl_J.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/gl_m.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/d_glav.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/sumkikoshelki.png" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/rukzakii_chemodani.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/img-60104-9490120_a.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/2Iotpj.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/postel_gl.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://7baza.com.ua/wa-data/public/site/category_images/glavn/rasprodaja.jpg" alt="">
+                    <h4>Женская одежда</h4>
+                </a>
+                <a href="#" class="card">
+                    <img src="https://thumb.tildacdn.com/tild6263-3131-4336-b832-343163333164/-/resize/300x/-/format/webp/A0370V012_01.jpg" alt="">
+                    <h4>Обувь</h4>
+                </a>
+            </div>
+        </div>
+
+        
+
+        <div class="browsing-history">
+
+        </div>
+
+        <footer>
+            <div class="footer-column">
+                <h4>Страницы</h4>
+                <ul class="pages">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Почему нам доверяют?</a></li>
+                    <li><a href="#">Как оформить заказ?</a></li>
+                    <li><a href="#">Как оформить заказ до дропшопингу?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Служба поддержки</h4>
+                <ul class="pages">
+                    <li><a href="#" id="contactLink">Связаться с нами</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Личный кабинет</h4>
+                <ul class="pages">
+                    <li><a href="#">История заказов</a></li>
+                    <li><a href="#">Мой список желаний</a></li>
+                    <li><a href="#">Моя корзина</a></li>
+                    <li><a href="#">Мой профиль</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
-    <script src="js/index.js"></script>
+    <script src="js\slider.js"></script>
+    <script src="js\load.js"></script>
 </body>
 </html>
