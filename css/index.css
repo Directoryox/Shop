@@ -270,3 +270,11 @@ footer ul.pages li a {
 footer ul {
     display: block;
 }
+
+.pages.social {
+    display: flex;   
+}
+
+.pages.social li a {
+    margin: 0;
+}
