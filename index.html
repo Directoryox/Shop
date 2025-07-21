@@ -49,25 +49,25 @@
             <div class="swiper-button-next"></div>
         </div>
 
-        <div class="info-blocks">
-            <div class="info-item">
+        <section class="info-blocks">
+            <article class="info-item">
                 <i class="fa-solid fa-truck"></i>
                 <h3>Доставка по Украине</h3>
                 <p>Отправим ваш заказ с любой удобной транспортной компанией</p>
-            </div>
-            <div class="info-item">
+            </article>
+            <article class="info-item">
                 <i class="fa-solid fa-wallet"></i>
                 <h3>Способы оплаты</h3>
                 <p>Работаем с 100% предоплатой</p>
-            </div>
-            <div class="info-item">
+            </article>
+            <article class="info-item">
                 <i class="fa-solid fa-question"></i>
                 <h3>Как заказать?</h3>
                 <p>Сделать заказ через сайт с помощью формы</p>
-            </div>
-        </div>
+            </article>
+        </section>
 
-        <div class="categories">
+        <section class="categories">
             <h2>Категории</h2>
             <div class="cards">
                 <a href="#" class="card">
@@ -111,74 +111,73 @@
                     <h4>Обувь</h4>
                 </a>
             </div>
-        </div>
+        </section>
 
-        
+        <section class="browsing-history"> <!-- js -->
 
-        <div class="browsing-history"> <!-- js -->
+        </section>
 
-        </div>
-
-        <div class="input-select">
+        <form class="input-select">
             <div class="search-box input-cards">
-                <input type="search" placeholder="Поиск товаров">
-                <button type="submit" class="search-btn cards">
+                <input type="search" placeholder="Поиск товаров" name="search">
+                <button type="submit" class="search-btn cards" aria-label="Кнопка поиска">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
             <div class="select-sort">
-                <select class="form-select">
-                    <option selected>Сортировка за заказами</option>
-                    <option>Цена: сначала дешевые</option>
-                    <option>Цена: сначала дорогие</option>
-                    <option>Название: А–Я</option>
-                    <option>Название: Я–А</option>
-                    <option>Сначала новые</option>
-                    <option>Сначала старые</option>
+                <select id="sort-select" class="form-select" name="sort">
+                <option selected>Сортировка за заказами</option>
+                <option>Цена: сначала дешевые</option>
+                <option>Цена: сначала дорогие</option>
+                <option>Название: А–Я</option>
+                <option>Название: Я–А</option>
+                <option>Сначала новые</option>
+                <option>Сначала старые</option>
                 </select>
             </div>
-        </div>
+        </form>
 
-        <div class="goods-cards"> <!-- js -->
+        <section class="goods-cards"> <!-- js -->
 
-        </div>
+        </section>
 
         <footer>
-            <div class="footer-column">
-                <h5>Мы в социальных сетях</h5>
-                <ul class="pages social">
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h5>Страницы</h5>
-                <ul class="pages">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Почему нам доверяют?</a></li>
-                    <li><a href="#">Как оформить заказ?</a></li>
-                    <li><a href="#">Как оформить заказ до дропшопингу?</a></li>
-                </ul>
-            </div>
+        <nav class="footer-column" aria-label="Мы в социальных сетях">
+            <h5>Мы в социальных сетях</h5>
+            <ul class="pages social">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </nav>
 
-            <div class="footer-column">
-                <h5>Служба поддержки</h5>
-                <ul class="pages">
-                    <li><a href="#" id="contactLink">Связаться с нами</a></li>
-                    <li><a href="#">Возврат товара</a></li>
-                </ul>
-            </div>
+        <nav class="footer-column" aria-label="Страницы сайта">
+            <h5>Страницы</h5>
+            <ul class="pages">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Почему нам доверяют?</a></li>
+            <li><a href="#">Как оформить заказ?</a></li>
+            <li><a href="#">Как оформить заказ до дропшопингу?</a></li>
+            </ul>
+        </nav>
 
-            <div class="footer-column">
-                <h5>Личный кабинет</h5>
-                <ul class="pages">
-                    <li><a href="#">История заказов</a></li>
-                    <li><a href="#">Мой список желаний</a></li>
-                    <li><a href="#">Моя корзина</a></li>
-                    <li><a href="#">Мой профиль</a></li>
-                </ul>
-            </div>
+        <nav class="footer-column" aria-label="Служба поддержки">
+            <h5>Служба поддержки</h5>
+            <ul class="pages">
+            <li><a href="#" id="contactLink">Связаться с нами</a></li>
+            <li><a href="#">Возврат товара</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Личный кабинет">
+            <h5>Личный кабинет</h5>
+            <ul class="pages">
+            <li><a href="#">История заказов</a></li>
+            <li><a href="#">Мой список желаний</a></li>
+            <li><a href="#">Моя корзина</a></li>
+            <li><a href="#">Мой профиль</a></li>
+            </ul>
+        </nav>
         </footer>
         <div class="footer-bottom">
             <hr>
