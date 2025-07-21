@@ -297,3 +297,49 @@ footer ul {
     font-size: 13px;
     color: #aaa;
 }
+
+.search-box.input-cards input {
+    border-radius: 0;
+    width: 65%;
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    height: 30px;
+}
+
+.search-btn.cards {
+    position: absolute;
+    right: 110px;
+    margin-top: 5px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    width: 0;
+}
+
+.search-btn.cards i {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 0;
+}
+
+.input-select {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.search-box.search-box.input-cards {
+    position: relative;
+    left: 350px;
+    display: flex;
+}
+
+.select-sort {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
