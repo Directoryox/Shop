@@ -1,13 +1,13 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 1.25rem;
     font-family: Mplus1p, sans-serif;
 }
 
 * {
     box-sizing: border-box;
     color: black;
+    font-size: 1.1rem;
 }
 
 ul {
@@ -21,7 +21,12 @@ a {
     text-decoration: none;
 }
 
+.navbar {
+    user-select: text;
+}
+
 .block {
+    user-select: none;
     background-color: #FDFDFD;
     justify-content: center;
     justify-items: center;
@@ -81,13 +86,9 @@ li i {
     color: #666;
 }
 
-.navbar li span, .navbar li a {
-    font-size: 1.1rem;
-}
-
-.navbar li span, .navbar li i {
-    cursor: pointer;
-    user-select: none;
+.navbar li span, .navbar li i, .btn {
+    cursor: auto;
+    user-select: text;
 }
 
 .navbar {
@@ -235,9 +236,8 @@ footer {
     padding: 0 15px;
 }
 
-.footer-column h4 {
-    color: white !important;
-    font-size: 1rem !important;
+.footer-column h6 {
+    color: white;
     margin-bottom: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -251,6 +251,7 @@ footer ul.pages li {
 footer ul.pages li a {
     color: #ccc;
     text-decoration: none;
+    font-size: 0.9rem;
     transition: color 0.2s;
 }
 
@@ -312,19 +313,15 @@ footer ul {
     border-radius: 0;
 }
 
-.dropdown-menu li a {
-    font-size: 1.1em;
-}
-
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-    background-color: transparent !important;
-    color: #666 !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    background-color: transparent;
+    color: #666;
+    border: none;
+    box-shadow: none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -337,11 +334,7 @@ footer ul {
     border: 1px solid #ddd;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
     padding: 0.7rem 0;
-    width: 100%;
-}
-
-.submenu li a {
-    font-size: 1em;
+    width: 110%;
 }
 
 .dropdown li.position-relative:hover > .submenu {
@@ -351,4 +344,20 @@ footer ul {
 .dropdown-item i.fa {
     margin-right: 10px;
     font-size: 15px;
+}
+
+.dropdown-item.text.top {
+    margin-top: 10px;
+}
+
+.dropdown-item.text:hover, .dropdown-item.text:active {
+    background-color: transparent;
+}
+
+.dropdown-item, .dropdown-item.text span {
+    font-size: 17px;
+}
+
+.cur {
+  cursor: pointer !important;
 }
