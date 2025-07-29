@@ -309,8 +309,9 @@ footer ul {
     margin-top: 0;
 }
 
-.dropdown-menu {
+.dropdown-menu.list {
     border-radius: 0;
+    padding: 0;
 }
 
 .btn-secondary,
@@ -333,8 +334,7 @@ footer ul {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
-    padding: 0.7rem 0;
-    width: 110%;
+    margin-top: 10px;
 }
 
 .dropdown li.position-relative:hover > .submenu {
@@ -359,5 +359,29 @@ footer ul {
 }
 
 .cur {
-  cursor: pointer !important;
+    cursor: pointer !important;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu:hover > .submenu {
+  display: block;
+}
+
+.arrow-right {
+    position: absolute;
+    left: 92%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-menu.list .dropdown-item {
+    width: 285px;
+    padding: 10px 1rem;
+}
+
+.dropdown-menu.list .dropdown-divider {
+    margin: 0;
 }
