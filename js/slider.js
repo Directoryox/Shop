@@ -10,3 +10,4 @@ pagination: {
     mousewheel: false,
     keyboard: true,
 });
+
